@@ -1,0 +1,17 @@
+{
+  "name": "atividade-sass",
+  "version": "1.0.0",
+  "description": "atividade do modulo sass",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Hugo",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0"
+  }
+}

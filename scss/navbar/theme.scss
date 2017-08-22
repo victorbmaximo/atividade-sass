@@ -1,0 +1,35 @@
+@import "scss/variables.scss";
+
+%component{
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+
+@mixin theme ($bg, $color, $border){
+	background: $bg;
+	color: $color;
+	border: $border;
+
+	.nav-brand{
+		color: $color;
+	}
+
+	.nav-item{
+		color: $color;
+	}
+
+}
+
+nav{
+	@include theme ($theme-1-bg, $theme-1-clr, $theme-1-brd);	
+	//@include theme ($theme-2-bg, $theme-2-clr, $theme-2-brd); 
+	//@include theme ($theme-3-bg, $theme-3-clr, $theme-3-brd);
+
+	.nav-item{
+		&:hover{
+			@include theme ($theme-1-bghover, $theme-1-clrhover, none);
+			//@include theme ($theme-2-bghover, $theme-2-clrhover, none);	
+			//@include theme ($theme-3-bghover, $theme-3-clrhover, none);	
+		}
+	}
+}
